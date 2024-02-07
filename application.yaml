@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mynodeapp-argo-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL:
+    targetRevision: HEAD
+    path: dev
+  destination:
+    server:
+    namespace: mynodeapp
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
