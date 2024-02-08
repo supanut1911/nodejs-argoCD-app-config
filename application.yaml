@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL:
+    repoURL: https://github.com/Supanut1911/nodejs-argoCD-app-config.git
     targetRevision: HEAD
     path: dev
   destination:
-    server:
+    server: gcloud container clusters get-credentials nutx-k8s --zone asia-southeast1-b --project my-k8s-playground-412511
     namespace: mynodeapp
   syncPolicy:
     syncOptions:
