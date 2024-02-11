@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mynodeapp
+spec:
+  selector:
+    matchLabels:
+      app: mynodeapp
+    replicas: 2
+    template:
+      metadata:
+        labels:
+          app: mynodeapp
+
+      spec:
+        containers:
+        - name: mynodeapp
+          image: devsupanut/nodejs-demo: 1.0
+          ports:
+          - containerPort: 8080
