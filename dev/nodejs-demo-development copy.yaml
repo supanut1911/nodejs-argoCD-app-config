@@ -17,4 +17,4 @@ spec:
         - name: mynodeapp
           image: devsupanut/nodejs-demo: 1.0
           ports:
-          - containerPort: 8080
+          - containerPort: 4000

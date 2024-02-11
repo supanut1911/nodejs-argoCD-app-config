@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+matadata:
+  name: mynodeapp-service
+spec:
+  selector:
+    app: mynodeapp
+  ports:
+  - port: 4000
+    protocol: TCP
+    targetPort: 4000
