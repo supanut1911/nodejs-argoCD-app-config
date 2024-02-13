@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
 spec:
   project: default
+  
   source:
     repoURL: https://github.com/Supanut1911/nodejs-argoCD-app-config.git
     targetRevision: HEAD
