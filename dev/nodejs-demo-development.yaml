@@ -16,5 +16,6 @@ spec:
       containers:
       - name: mynodeapp
         image: devsupanut/nodejs-demo:1.0
+        imagePullPolicy: Always
         ports:
         - containerPort: 4000
