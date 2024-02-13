@@ -5,3 +5,5 @@ App config for Nodejs app
     - service
 
 - application for configuration the ArgoCD
+
+trigger sync
