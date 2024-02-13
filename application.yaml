@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: dev
   destination:
-    server: gcloud container clusters get-credentials nutx-k8s --zone asia-southeast1-b --project my-k8s-playground-412511
+    server: https://kubernetes.default.svc
     namespace: mynodeapp
   syncPolicy:
     syncOptions:
