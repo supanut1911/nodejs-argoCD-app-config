@@ -6,4 +6,4 @@ App config for Nodejs app
 
 - application for configuration the ArgoCD
 
-trigger sync
+trigger sync 1.2
